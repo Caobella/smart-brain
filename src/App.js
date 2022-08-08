@@ -128,7 +128,7 @@ loadUser = (data) => {
       .then(response => JSON.parse(response))
       .then(result => {
         if (result) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://protected-earth-04690.herokuapp.com/image', {//put heroku url here
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
